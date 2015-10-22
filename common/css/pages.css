@@ -12,6 +12,24 @@
 	border-radius: 5px;
 }
 
+/* ----------------------------------
+	Control
+-------------------------------------*/
+
+.control {
+	float: right;
+}
+
+.control a {
+	color: #7f8c8d;
+	border: 1px solid #7f8c8d;
+	padding-bottom: 2px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
 html {
 	height: 100%;
 }
@@ -12102,9 +12120,7 @@ iframe {
     position: relative;
 }
 
-.news {
-	min-height: 500px;
-}
+
 
 .block-title span {
 	margin-left: 0px;
@@ -12238,15 +12254,86 @@ input {
 	color: #E02F2F;
 }
 
-.memgal {
-	margin-top: 20px;
+/* ----------------------------------
+	News
+-------------------------------------*/
+
+.news {
+	min-height: 500px;
+}
+
+.blockNews {
+	margin-bottom: 20px;
+}
+
+.newsImage {
+	width: 100px;
+	height: 75px;
+}
+
+.newsDetail {
+	width: 275px;
+}
+
+.newsDetail h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	line-height: 13px;
+}
+
+.newsDetail a {
+	font-family: "Open Sans",arial,sans-serif;
+	color: #111;
+}
+
+.newsDate time {
+	font-family: "Segoe UI",Arial,sans-serif;
+	color: #444;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.news .control {
+	margin-right: 30px;
+}
+
+.news .control a:hover {
+	color: #F64747;
+	padding-bottom: 2px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+
+/* --------- Entertainment ---------- */
+
+.entertainmentTitle {
+	background-color: #F64747;
 }
 
 
 
+/* --------- Otaku ---------- */
+
+.otakuTitle {
+	background-color: #BF55EC;
+}
+
+/* --------- Lifestyle ---------- */
+
+.lifestyleTitle {
+	background-color: #F2784B;
+}
+
 /* ----------------------------------
 	Member
 -------------------------------------*/
+
+.memgal {
+	margin-top: 20px;
+}
 
 .memberMain {
 	width: 53.4%;
@@ -12284,7 +12371,6 @@ input {
 	font-family: "Open Sans",arial,sans-serif;
 	color: #111;
 	font-size: 14px;
-
 }
 
 .metaInfo {
@@ -12294,7 +12380,7 @@ input {
 }
 
 .memberSmall {
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 
 .memberSmallpic {
@@ -12306,24 +12392,13 @@ input {
 	width: 190px;
 }
 
-.memberDetail {
-	margin-bottom: 5px;
-}
-
-.memberDetail a {
-	color: #3F8FD2;
-	font-size: 13px;
-}
-
 .memberMain .control {
-	float: right;
 	margin-top: 15px;
 	margin-right: 35px;
 }
 
-.memberMain .control a {
-	color: #7f8c8d;
-	border: 1px solid #7f8c8d;
+.memberMain .control a:hover {
+	color: #1ABC9C;
 	padding-bottom: 2px;
 	padding-left: 13px;
 	padding-right: 13px;
@@ -12331,15 +12406,10 @@ input {
 	font-weight: bold;
 }
 
-.memberMain .control a:hover {
-	color: #fff;
-	border: 1px solid #1ABC9C;
-	background-color: #1ABC9C;
-	padding-bottom: 2px;
-	padding-left: 13px;
-	padding-right: 13px;
-	border-radius: 4px;
-	font-weight: bold;
+.memberDetail a {
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 13px;
+	color: #4B77BE;
 }
 
 /* ----------------------------------
@@ -12398,18 +12468,18 @@ input#enni:checked ~ .gallery li:not(.desert-item) {
 }
 
 ul.gallery li {
-  display: inline-block;
-  opacity:1;
-  margin-bottom: 20px;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
+	display: inline-block;
+  	opacity:1;
+  	margin-bottom: 30px;
+  	-webkit-transition: opacity .5s ease-in-out;
+  	-moz-transition: opacity .5s ease-in-out;
+  	-o-transition: opacity .5s ease-in-out;
+  	transition: opacity .5s ease-in-out;
 }
 
 .galleryMain .control {
 	float: right;
-	margin-top: 41px;
+	margin-top: 12px;
 	margin-right: 3px;
 }
 
@@ -12424,9 +12494,7 @@ ul.gallery li {
 }
 
 .galleryMain .control a:hover {
-	color: #fff;
-	border: 1px solid #3F8FD2;
-	background-color: #3F8FD2;
+	color: #3F8FD2;
 	padding-bottom: 2px;
 	padding-left: 13px;
 	padding-right: 13px;
