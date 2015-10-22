@@ -1,0 +1,404 @@
+@charset 'utf-8';
+/* ==========================================================================
+Contain		:
+	Reset CSS that resets browser's consisting CSS setting as default.
+	CSSs that construct page layout like page background, header, footer, global navigation and so on.
+	
+Contents	:
+	1: Reset Section
+	2: Wrap Section
+	3: Header Section
+	4: Main Section
+	5: Footer Section
+	
+========================================================================== */
+/*
+	Reset Section
+-------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    font-feature-settings: "kern";
+	-webkit-text-size-adjust: auto;
+	-moz-text-size-adjust: auto;
+	-ms-text-size-adjust: auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+a {
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #000;
+}
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+h4 {
+	font-size: 14px;
+	margin: 5px 0;
+}
+/*
+	Wrap Section
+-------------------------------------*/
+#wrap {
+    width: 100%;
+}
+
+#wrapInner {
+    width: 100%;
+}
+
+/*
+	Main Section
+-------------------------------------*/
+.mainArea {
+    width: 100%;
+}
+
+
+/* --- Side Area --- */
+
+#sideArea {
+    width: 200px;
+    height: 100%;
+    float: left;
+    position: fixed !important;
+    background-color: #111111;
+}
+
+.logo {
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 30px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.user {
+    margin-top: 50px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.user a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.user a img {
+    width: 15%;
+    height: 15%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.user a i{
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+}
+
+.fa-lg {
+    font-size: 18px;
+}
+
+.user-dropdown {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.user-dropdown li {
+    padding: 0 11px;
+    font-size: 14px;
+}
+
+.user-dropdown li a {
+    width: 100%;
+    height: 48px;
+    color: #B3B3B3;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    line-height: 48px;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.user-dropdown li a:hover {
+    background: #242424 none repeat scroll 0% 0%;
+    color: #B71427;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+.dropdown li:hover > a {
+    color: #000;
+    background: none;
+}
+
+.user-dropdown li i {
+    width: 5%;
+}
+
+.user-dropdown li span {
+    color: #B3B3B3;
+    padding-left: 33px;
+    font-size: 14px;
+}
+
+.user-dropdown li .badge {
+    float: right;
+    padding-left: 9px;
+    padding-right: 10px;
+    margin-top: 17px;
+    font-size: 10px;
+    background-color: #D91E18;
+}
+
+#list-span {
+    width: 30px;
+}
+
+/* Social Media */
+
+.social-media {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 6px;
+}
+
+#facebook:hover {
+    color: #3B5998;
+}
+
+#twitter:hover {
+    color: #2A99E0;
+}
+
+#instagram:hover {
+    color: #9D7144;
+}
+
+#pinterest:hover {
+    color: #CA2128;
+}
+
+.footer {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 10px;
+}
+
+
+/* --- Header Area --- */
+
+#contentArea {
+    width: 1700px;
+    float: right;
+    background-color: #E3E4E6;
+}
+
+.headerArea {
+    width: 100%;
+    height: 85px;
+    padding: 14px 15px;
+    border-radius: 3px;
+    background-color: #E3E4E6;
+}
+
+.header {
+    width: 88.8%;
+    height: 60px;
+    background-color: #fff;
+}
+
+.left_nav {
+    float: left;
+    width: 79%;
+    padding: 0 20px;
+}
+
+
+.nav li {
+    display: inline;
+    padding-right: 25px;
+}
+
+.nav li a {
+    font-size: 0.9vw;
+    color: #333333;
+}
+
+.nav li a i {
+    padding-right: 8px;
+}
+
+.ads {
+    float: right;
+    width: 35%;
+    margin-top: 7px;
+}
+
+.right_nav {
+    float: right;
+    width: 21%;
+}
+
+/* Search */
+
+.search-container {
+    position: absolute;
+    width: 5%;
+    float: left;
+    height: 60px;
+    padding-left: 27px;
+    z-index: 999;
+}
+
+.search-box {
+  width: 40px;
+  height: 40px;
+  font-size: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+}
+
+.search-box:hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+}
+
+.search-box:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+}
+
+#search-submit {
+  position: relative;left: -5000px;
+}  
+
+.search-icon {
+  position: relative;
+  left: -32px;
+  color: white;
+  cursor: pointer;
+} 
+
+@font-face {
+    font-family:'Glyphicons Halflings';
+    src:url(fonts/glyphicons-halflings-regular.eot);
+    src:url(fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(fonts/glyphicons-halflings-regular.woff) format('woff'),url(fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
+
+.glyphicon {
+    position:relative;
+    top:1px;
+    display:inline-block;
+    font-family:'Glyphicons Halflings';
+    font-style:normal;
+    font-weight:400;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+.glyphicon-search:before {
+    content:"\e003"
+}
+
+/* Login */
+
+.login {
+    float: right;
+    position: relative;
+    z-index: 1;
+    top: 13px;
+    right: 40px;
+}
+
+.login button {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FF0007;
+    text-shadow: none;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #FF0007;
+}
+
+.login button:hover {
+    color: #fff;
+    text-shadow: none;
+    background-color: #FF0007;
+    background-image: none;
+    border: 1px solid #FF0007;
+    cursor: pointer;
+}
+
+/*
+	Media Query
+-------------------------------------*/

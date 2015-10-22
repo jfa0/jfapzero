@@ -1,0 +1,21 @@
+@charset 'utf-8';
+/* ==========================================================================
+Contain		:
+	CSS that are used in contents area such as strong text, margin set, basic list style
+	
+Contents	:
+	
+========================================================================== */
+/*
+	Clearfix
+-------------------------------------*/
+.clearfix:before, .clearfix:after {
+	display: block;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
