@@ -1,6 +1,4 @@
-<?php
-	 session_start();
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -230,9 +228,6 @@
         <div class="header-inner"> <a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a> </div>
       </div>
 
-    	<?php 
-        if(isset($_SESSION['username'])){  
-      ?>
       <div class=" pull-right">
         <div class="visible-lg visible-md m-t-10">
           <div class="pull-left p-r-10 p-t-10 fs-16 font-heading"> 
@@ -253,13 +248,7 @@
           </div>
         </div>
       </div>
-      <?php
-      }
-      else
-      {
-        include('includes/login.php');
-      }
-      ?>
+
     </div>
 
     <div class="page-content-wrapper">
